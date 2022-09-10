@@ -1,3 +1,6 @@
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI5MjUzMTN9.bFHs_4gMNhgCDoxOqIjnPdBFrFb0vFxmxhDk5L6khbY
+
+
 ### User Create Route
 POST http://localhost:3000/users.json
 Content-Type: application/json
@@ -9,11 +12,21 @@ Content-Type: application/json
   "password_confirmation": "password"
 }
 
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "password"
+}
+
+
 
 ### Conversation Index Route
 GET http://localhost:3000/conversations/messages.json
-
+Authorization: Bearer {{jwt}}
 
 ### Conversation Show Route
 GET http://localhost:3000/conversations/1/messages.json
-
+Authorization: Bearer {{jwt}}
