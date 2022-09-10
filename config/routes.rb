@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
 
+  # User Routes
+  post "users" => "users#create"
+
   # Conversation Routes
   get "/conversations/messages" => "conversations/messages#index"
   get "/conversations" => "conversations#show"

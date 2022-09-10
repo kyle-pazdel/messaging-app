@@ -1,5 +1,16 @@
+### User Create Route
+POST http://localhost:3000/users.json
+Content-Type: application/json
 
-### Conversation Index Rout
+{
+  "name": "Test User",
+  "email": "test@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+
+### Conversation Index Route
 GET http://localhost:3000/conversations/messages.json
 
 
