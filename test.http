@@ -1,7 +1,7 @@
 @jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI5MjUzMTN9.bFHs_4gMNhgCDoxOqIjnPdBFrFb0vFxmxhDk5L6khbY
 
 
-### User Create Route
+### User Create Request
 POST http://localhost:3000/users.json
 Content-Type: application/json
 
@@ -23,11 +23,11 @@ Content-Type: application/json
 
 
 
-### Conversation Index Route
+### Conversation Index Request
 GET http://localhost:3000/conversations.json
 Authorization: Bearer {{jwt}}
 
-### Conversation Create Route
+### Conversation Create Request
 POST http://localhost:3000/conversations.json
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
@@ -35,4 +35,13 @@ Content-Type: application/json
 {
   "sender_id": "1",
   "recipient_id": "2"
+}
+
+### Message Index Request
+GET http://localhost:3000/messages.json
+Authorization: Bearer {{jwt}}
+Content-Type: application/json
+
+{
+  "conversation_id": "2"
 }

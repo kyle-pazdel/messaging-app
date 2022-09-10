@@ -14,10 +14,9 @@ class ConversationsController < ApplicationController
       @conversation = Conversation.create!(sender_id: params[:sender_id], recipient_id: params[:recipient_id])
     end
 
-    render json: @conversation
+    redirect_to conversation_messages_path(@conversation)
+
+    # render json: @conversation
   end
 
-  # def show
-  #   render json: { message: "This route works!" }
-  # end
 end

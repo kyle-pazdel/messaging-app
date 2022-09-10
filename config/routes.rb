@@ -15,4 +15,7 @@ Rails.application.routes.draw do
   # Conversation Routes
   get "/conversations" => "conversations#index"
   post "/conversations" => "conversation#create"
+
+  # Message Routes
+  get "/messages" => "messages#index"
 end
