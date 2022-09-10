@@ -45,3 +45,14 @@ Content-Type: application/json
 {
   "conversation_id": "2"
 }
+
+### Message Create Request
+POST http://localhost:3000/messages.json
+Authorization: Bearer {{jwt}}
+Content-Type: application/json
+
+{
+  "conversation_id": "2",
+  "user_id": "2",
+  "body": "This is a test message."
+}

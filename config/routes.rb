@@ -18,4 +18,5 @@ Rails.application.routes.draw do
 
   # Message Routes
   get "/messages" => "messages#index"
+  post "/messages" => "messages#create"
 end
