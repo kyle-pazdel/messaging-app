@@ -9,6 +9,9 @@ Rails.application.routes.draw do
   # User Routes
   post "users" => "users#create"
 
+  # Session Routes
+  post "/sessions" => "sessions#create"
+
   # Conversation Routes
   get "/conversations/messages" => "conversations/messages#index"
   get "/conversations" => "conversations#show"
