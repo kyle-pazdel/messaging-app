@@ -13,6 +13,6 @@ Rails.application.routes.draw do
   post "/sessions" => "sessions#create"
 
   # Conversation Routes
-  get "/conversations/messages" => "conversations/messages#index"
-  get "/conversations" => "conversations#show"
+  get "/conversations" => "conversations#index"
+  post "/conversations" => "conversation#create"
 end

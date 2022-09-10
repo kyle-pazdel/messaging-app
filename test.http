@@ -24,9 +24,15 @@ Content-Type: application/json
 
 
 ### Conversation Index Route
-GET http://localhost:3000/conversations/messages.json
+GET http://localhost:3000/conversations.json
 Authorization: Bearer {{jwt}}
 
-### Conversation Show Route
-GET http://localhost:3000/conversations/1/messages.json
+### Conversation Create Route
+POST http://localhost:3000/conversations.json
 Authorization: Bearer {{jwt}}
+Content-Type: application/json
+
+{
+  "sender_id": "1",
+  "recipient_id": "2"
+}
