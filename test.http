@@ -1,4 +1,4 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI5MjUzMTN9.bFHs_4gMNhgCDoxOqIjnPdBFrFb0vFxmxhDk5L6khbY
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NjI5MzMyNjF9.mfSrCH1An0wqwsZoo3ZUiNCKxvqysqeL4xLfFga7Ufo
 
 
 ### User Create Request
@@ -53,6 +53,6 @@ Content-Type: application/json
 
 {
   "conversation_id": "2",
-  "user_id": "2",
-  "body": "This is a test message."
+  "user_id": "1",
+  "body": "This is a third test message."
 }
